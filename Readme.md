@@ -2,7 +2,7 @@
 *Files to look at*:
 
 * [Internal.cs](./CS/DXPivotGrid_ChartsIntegration/Internal.cs) (VB: [Internal.vb](./VB/DXPivotGrid_ChartsIntegration/Internal.vb))
-* [MainWindow.xaml](./CS/DXPivotGrid_ChartsIntegration/MainWindow.xaml) (VB: [MainWindow.xaml.vb](./VB/DXPivotGrid_ChartsIntegration/MainWindow.xaml.vb))
+* [MainWindow.xaml](./CS/DXPivotGrid_ChartsIntegration/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/DXPivotGrid_ChartsIntegration/MainWindow.xaml))
 * [MainWindow.xaml.cs](./CS/DXPivotGrid_ChartsIntegration/MainWindow.xaml.cs) (VB: [MainWindow.xaml.vb](./VB/DXPivotGrid_ChartsIntegration/MainWindow.xaml.vb))
 <!-- default file list end -->
 # How to visualize pivot grid data via the DXCharts Suite
