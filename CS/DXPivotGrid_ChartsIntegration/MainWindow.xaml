@@ -4,7 +4,8 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
         xmlns:local="clr-namespace:DXPivotGrid_ChartsIntegration"
         x:Class="DXPivotGrid_ChartsIntegration.MainWindow" 
-        Height="600" Width="1400" Title="Main Window"
+        Height="450" Width="800" Title="PivotGrid and Bound ChartControl
+        "
         Loaded="Window_Loaded">
     <Grid>
         <Grid.ColumnDefinitions>

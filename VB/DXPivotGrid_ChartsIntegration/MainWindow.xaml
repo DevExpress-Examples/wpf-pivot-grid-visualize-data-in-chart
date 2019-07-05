@@ -1,25 +1,26 @@
-<Window xmlns:dxc="http://schemas.devexpress.com/winfx/2008/xaml/charts"
+﻿<Window xmlns:dxc="http://schemas.devexpress.com/winfx/2008/xaml/charts"
         xmlns:dxpg="http://schemas.devexpress.com/winfx/2008/xaml/pivotgrid" 
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
         xmlns:local="clr-namespace:DXPivotGrid_ChartsIntegration"
         x:Class="DXPivotGrid_ChartsIntegration.MainWindow" 
-        Height="600" Width="1400" Title="Main Window"
+        Height="450" Width="800" Title="PivotGrid and Bound ChartControl
+        "
         Loaded="Window_Loaded">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="300" />
-            <ColumnDefinition />
+            <ColumnDefinition Width="300"/>
+            <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="Auto" />
-            <RowDefinition />
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
         </Grid.RowDefinitions>
         <CheckBox x:Name="cbTransposeDataSource" Content="Transpose Data Source" 
                   Margin="5,10,5,10">
             <CheckBox.IsChecked>
                 <Binding ElementName="pivotGridControl1" Path="ChartProvideDataByColumns"
-                         Mode="TwoWay" Converter="{local:InverseBooleanConverter}" />
+                         Mode="TwoWay" Converter="{local:InverseBooleanConverter}"/>
             </CheckBox.IsChecked>
         </CheckBox>
         <dxpg:PivotGridControl ShowRowGrandTotals="False" ShowColumnGrandTotals="False"
@@ -41,7 +42,7 @@
                 <dxc:XYDiagram2D SeriesDataMember="Series">
                     <dxc:XYDiagram2D.SeriesTemplate>
                         <dxc:BarSideBySideSeries2D ArgumentDataMember="Arguments" 
-                                                   ValueDataMember="Values" />
+                                                   ValueDataMember="Values"/>
                     </dxc:XYDiagram2D.SeriesTemplate>
                 </dxc:XYDiagram2D>
             </dxc:ChartControl.Diagram>
