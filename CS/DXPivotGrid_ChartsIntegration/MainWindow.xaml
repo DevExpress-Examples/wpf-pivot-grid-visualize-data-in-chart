@@ -27,25 +27,13 @@
                                Grid.Column="0" Grid.Row="1" x:Name="pivotGridControl1"
                                ShowFilterHeaders="False" ChartSelectionOnly="False"
                                ChartFieldValuesProvideMode="DisplayText"
-                               ChartProvideDataByColumns="True"
-                               DataProcessingEngine="Optimized">
+                               ChartProvideDataByColumns="True">
             <dxpg:PivotGridControl.Fields>
-                <dxpg:PivotGridField Name="fieldYear" Area="ColumnArea" Caption="Year">
-                    <dxpg:PivotGridField.DataBinding>
-                        <dxpg:DataSourceColumnBinding ColumnName="OrderDate" GroupInterval="DateYear"/>
-                    </dxpg:PivotGridField.DataBinding>
-                </dxpg:PivotGridField>
-                <dxpg:PivotGridField Name="fieldSalesPerson"
-                                     Area="RowArea" Caption="Sales Person">
-                    <dxpg:PivotGridField.DataBinding>
-                        <dxpg:DataSourceColumnBinding ColumnName="Salesperson"/>
-                    </dxpg:PivotGridField.DataBinding>
-                </dxpg:PivotGridField>
-                <dxpg:PivotGridField Name="fieldQuantity" Area="DataArea">
-                    <dxpg:PivotGridField.DataBinding>
-                        <dxpg:DataSourceColumnBinding ColumnName="Quantity"/>
-                    </dxpg:PivotGridField.DataBinding>
-                </dxpg:PivotGridField>
+                <dxpg:PivotGridField Name="fieldYear" FieldName="OrderDate" Area="ColumnArea"
+                                     Caption="Year" GroupInterval="DateYear" />
+                <dxpg:PivotGridField Name="fieldSalesPerson" FieldName="Salesperson"
+                                     Area="RowArea" Caption="Sales Person" />
+                <dxpg:PivotGridField Name="fieldQuantity" FieldName="Quantity" Area="DataArea" />
             </dxpg:PivotGridControl.Fields>
         </dxpg:PivotGridControl>
         <dxc:ChartControl DataSource="{Binding ElementName=pivotGridControl1, Path=ChartDataSource}"
