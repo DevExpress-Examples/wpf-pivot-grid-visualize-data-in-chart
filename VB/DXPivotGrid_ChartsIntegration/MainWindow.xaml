@@ -8,18 +8,18 @@
         Loaded="Window_Loaded">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="300" />
-            <ColumnDefinition />
+            <ColumnDefinition Width="300"/>
+            <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="Auto" />
-            <RowDefinition />
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
         </Grid.RowDefinitions>
         <CheckBox x:Name="cbTransposeDataSource" Content="Transpose Data Source" 
                   Margin="5,10,5,10">
             <CheckBox.IsChecked>
                 <Binding ElementName="pivotGridControl1" Path="ChartProvideDataByColumns"
-                         Mode="TwoWay" Converter="{local:InverseBooleanConverter}" />
+                         Mode="TwoWay" Converter="{local:InverseBooleanConverter}"/>
             </CheckBox.IsChecked>
         </CheckBox>
         <dxpg:PivotGridControl ShowRowGrandTotals="False" ShowColumnGrandTotals="False"
@@ -41,7 +41,7 @@
                 <dxc:XYDiagram2D SeriesDataMember="Series">
                     <dxc:XYDiagram2D.SeriesTemplate>
                         <dxc:BarSideBySideSeries2D ArgumentDataMember="Arguments" 
-                                                   ValueDataMember="Values" />
+                                                   ValueDataMember="Values"/>
                     </dxc:XYDiagram2D.SeriesTemplate>
                 </dxc:XYDiagram2D>
             </dxc:ChartControl.Diagram>
