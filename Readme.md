@@ -13,7 +13,7 @@ The _Transpose Data Source_ check box is bound to the [PivotGridControl.ChartPro
 ![screenshot](/images/screenshot.png)
 ## Files to Review
 
-* [MainWindow.xaml](./CS/DXPivotGrid_ChartsIntegration/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/DXPivotGrid_ChartsIntegration/MainWindow.xaml))
+* [MainWindow.xaml](./CS/WpfPivotChart/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/WpfPivotChart/MainWindow.xaml))
 <!-- feedback -->
 ## Does this example address your development requirements/objectives?
 
